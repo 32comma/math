@@ -7,14 +7,12 @@ function isPrime(n) {
 }
 
 function solution(nums) {
-    var set = new Set();
     var answer = 0;
     for (var i = 0; i < nums.length; i++) {
         for (var j = i + 1; j < nums.length; j++) {
             for (var k = j + 1; k < nums.length; k++) {
                 var value = [nums[i], nums[j], nums[k]];
-                set.add(nums[i] + nums[j] + nums[k]);
-                if (isPrime(nums[i] + nums[j] + nums[k])) {
+                if (isPrime(value)) {
                     answer++;
                 }
             }
