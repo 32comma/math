@@ -11,3 +11,5 @@ function solution(nums){
     console.log('hello javascript');
     return answer;
 }
+
+console.log(isPrime1(1));
